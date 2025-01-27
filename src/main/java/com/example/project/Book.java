@@ -2,29 +2,63 @@ package com.example.project;
 
 public class Book{
     //requires 5 attributes String title, String author, int yearPublished, String isbn, int quantity
-
     //requires 1 constructor with 5 arguments that intitialize the attribtues of the class.
+    private String title;
+    private String author;
+    private int yearPublished;
+    private String isbn;
+    private int quantity;
+    public Book(String title, String author, int yearPublished, String isbn, int quantity) {
+        this.title = title;
+        this.author = author;
+        this.yearPublished = yearPublished;
+        this.isbn = isbn;
+        this.quantity = quantity;
+    }
+    //Get title method
+    public String getTitle() {
+        return title;
+    }
+    //Set title method
+    public void setTitle(String newTitle) {
+        title = newTitle;
+    }
+    
+    public String getAuthor() {
+        return author;
+    }
 
-    // public  getTitle() {}
+    public void setAuthor(String newAuthor) {
+        author = newAuthor;
+    }
 
-    // public setTitle() {}
+    public int getYearPublished() {
+        return yearPublished;
+    }
 
-    // public getAuthor() {}
+    public void setYearPublished(int newYear) {
+        yearPublished = newYear;
+    }
 
-    // public setAuthor() {}
+    public String getIsbn() {
+        return isbn;
+    }
 
-    // public getYearPublished() {}
+    public void setIsbn(String newIsbn) {
+        isbn = newIsbn;
+    }
 
-    // public setYearPublished() {}
+    public int getQuantity() {
+        return quantity;
+    }
 
-    // public getIsbn() {}
+    public void setQuantity(int newQuant) {
+        quantity = newQuant;
+    }
 
-    // public void setIsbn() {}
-
-    // public int getQuantity() {}
-
-    // public void setQuantity() {}
-
-    // public  bookInfo(){} //returns "Title: [], Author: [], Year: [], ISBN: [], Quantity: []"
-       
-}
+    public String bookInfo(){
+        return "Title: " + getTitle() + ", Author: " + getAuthor() + ", Year: " + getYearPublished() + ", ISBN: " + getIsbn() + ", Quantity: " + getQuantity();
+    } 
+    //returns "Title: [], Author: [], Year: [], ISBN: [], Quantity: []
+    }
+    
